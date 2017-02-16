@@ -1,9 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Module1.Views.ScrollViewPage"
              BackgroundImage="darkpolygon.jpg">
-  <ContentPage.Resources>
+
+	<ContentPage.Resources>
+<!--Bacjgroun iMage tag - poner image en background image 
+tambien tiene un metdo para load file path pero esto hace mas lento la aplicacion 
+--> 		
+		
      <ResourceDictionary>
             <Style x:Key="labelRedStyle" TargetType="Label">
                 <Setter Property="HorizontalOptions"
@@ -36,6 +41,8 @@
             </Style>
         </ResourceDictionary>
   </ContentPage.Resources>
+
+	<!--En esta pagina hay un scroll view aqui abajo eta dentro de un stack Layout  -->
   <StackLayout>
     <Button Text="Fade Stack Layout" x:Name="fadeButton" />
     <Button Text="Add Box" x:Name="addBoxButton" />

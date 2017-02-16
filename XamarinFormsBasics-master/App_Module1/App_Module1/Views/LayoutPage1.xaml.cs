@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*  Esta pagina es la logica del Layaout Page Osea del View 
+ *  Esro es como si fuese el controler 
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

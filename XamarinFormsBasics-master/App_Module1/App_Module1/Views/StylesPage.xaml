@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Module1.Views.StylesPage">
   <ContentPage.Resources>
+
+		<!-- Nueva oagina Styles Aqui Abajo los styles de todas las paginas --> 
     <ResourceDictionary>
       <Style x:Key="buttonStyle1" TargetType="Button">
         <Setter Property="BorderRadius" Value="20"></Setter>
@@ -19,6 +21,10 @@
   <AbsoluteLayout>
     <ScrollView AbsoluteLayout.LayoutBounds="0,0, 1, 0.5" AbsoluteLayout.LayoutFlags="All">
       <StackLayout Spacing="5" x:Name="buttonLayout">
+		<!-- Este button se cambia de etilo  con el estilo de arriba buttonsStyle1, buttnStyle2 
+		y en el codigo es que yo cambia el estilo la fucnion que dice ButtonAdd anade un Button y le cambia tambien el estilo 
+				a esos mismo botones 
+				--> 		
         <Button Text="First Button" BackgroundColor="Blue" Style="{DynamicResource buttonStyle}"></Button>
       </StackLayout>
 

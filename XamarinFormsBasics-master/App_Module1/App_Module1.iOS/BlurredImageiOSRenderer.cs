@@ -9,6 +9,8 @@ using Xamarin.Forms;
 
 namespace App_Module1.iOS
 {
+
+	// clase nativa de IOS 
     public class BlurredImageRenderer : ImageRenderer
     {
 
@@ -22,6 +24,10 @@ namespace App_Module1.iOS
                 });
             }
             base.OnElementChanged(e);
+
+			// New Code 
+
+
         }
 
         // ... BlurredImageView class goes here

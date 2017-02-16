@@ -20,10 +20,12 @@ using Android.Renderscripts;
 using System.Threading.Tasks;
 using System.IO;
 
+// exportar tipo de objeto y tipo de objeto de blender qu estas haciendo 
 [assembly: ExportRenderer(typeof(BlurredImage), typeof(BlurredImageRenderer))]
 namespace App_Module1.Droid
 {
 
+	// clase nativa de android 
     public class BlurredImageRenderer : ImageRenderer 
     {
 
@@ -105,6 +107,8 @@ namespace App_Module1.Droid
 
         private async void UpdateBitmap(Image previous = null)
         {
+
+			// Esta clase es Nativa de Android ahy no esta haciencod uso de xamarin form 
             Bitmap bitmap = null;
             ImageSource source = Element.Source;
             if (previous == null || !object.Equals(previous.Source, Element.Source))

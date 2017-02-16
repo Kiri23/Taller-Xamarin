@@ -10,6 +10,8 @@ namespace App_Module1.Views
 {
     public partial class StylesPage : ContentPage
     {
+
+
         public StylesPage()
         {
             InitializeComponent();
@@ -20,6 +22,8 @@ namespace App_Module1.Views
 
         }
 
+
+		// funcion pra anadir buttones 
         private void addButtonClicked(object sender, EventArgs e)
         {
             var button = new Button
@@ -35,6 +39,8 @@ namespace App_Module1.Views
             buttonLayout.Children.Add(button);
         }
 
+
+		// fucniones para cambiar estilo de lis botones 
         private void changeStyleClicked(object sender, EventArgs e)
         {
             if (Resources["buttonStyle"] == Resources["buttonStyle1"])
@@ -48,7 +54,7 @@ namespace App_Module1.Views
 
         private void nextButtonClicked(object sender, EventArgs e)
         {
-            
+            // escribir el codigo para bricar a la anueva pagina 
         }
     }
 }

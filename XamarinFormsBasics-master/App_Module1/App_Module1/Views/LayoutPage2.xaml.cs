@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+   Esta pagina es el controller del view del Layout page 2 
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +27,12 @@ namespace App_Module1.Views
             await Navigation.PushAsync(new ScrollViewPage());
         }
 
+		// clase asychronica 
         protected override async void OnAppearing()
         {
             redBox.Opacity = 0;
             blueBox.Opacity = 0;
+			// clase basica que se usa para processo asychronico 
             await Task.WhenAll(
                 redBox.FadeTo(1, 2000, Easing.CubicIn),
                 blueBox.FadeTo(1, 3000)

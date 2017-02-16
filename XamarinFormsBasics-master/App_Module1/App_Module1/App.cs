@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Esta es la primera pagina que se corre cuando se corre esta app
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +21,7 @@ namespace App_Module1
             {
                 Text = "Next Page",
                 Font = Font.SystemFontOfSize(NamedSize.Large),
+				// stack layout te da dos opciones Center y el CenterAndExpend
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
 
@@ -27,6 +31,7 @@ namespace App_Module1
             var content = new ContentPage
             {
                 Title = "App_Module1",
+				// el tipo de layuot que se va a coger 
                 Content = new StackLayout
                 {
                     VerticalOptions = LayoutOptions.Center,
@@ -50,6 +55,8 @@ namespace App_Module1
            {
                //PASSING DATA
                //Pass through new page objects constructor
+				// todas las paginas tienen un navigation object 
+				// esta empujando la proxima pagina encima de la pagina de content
                content.Navigation.PushAsync(new LayoutPage1(DateTime.Now.ToString()));
            };
 
